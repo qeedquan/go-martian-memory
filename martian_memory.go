@@ -337,16 +337,14 @@ func newMenu() *Menu {
 }
 
 func (m *Menu) warpMouse() {
+	ow, oh, _ := renderer.OutputSize()
+	v := renderer.Viewport()
 	lx := func(x int) int {
-		ow, _, _ := renderer.OutputSize()
-		v := renderer.Viewport()
 		nx := int(f64.LinearRemap(float64(x), 0, WIDTH, float64(v.X), float64(ow)-float64(v.X)))
 		return nx
 	}
 
 	ly := func(y int) int {
-		_, oh, _ := renderer.OutputSize()
-		v := renderer.Viewport()
 		ny := int(f64.LinearRemap(float64(y), 0, HEIGHT, float64(v.Y), float64(oh)-float64(v.Y)))
 		return ny
 	}
