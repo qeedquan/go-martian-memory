@@ -369,6 +369,7 @@ func (m *Menu) button() {
 	case 1:
 		toggleFullscreen()
 	case 2:
+		ek(hiscore.Load())
 		state = HISCORE
 	case 3:
 		os.Exit(0)
@@ -947,6 +948,7 @@ func (c *Game) Update() {
 		if c.checkHiscore() >= 0 {
 			state = OVER
 		} else {
+			ek(hiscore.Load())
 			state = HISCORE
 		}
 	}
