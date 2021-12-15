@@ -1,0 +1,41 @@
+09-23-03
+
+Added the -f or --fullscreen switch.
+
+08-19-03
+
+Changed some chips (removed bloody ones) the game is now "child safe".
+
+06-18-03
+
+program exits if close window or press [F10].
+if two scores are equal they are ordered by minor time.
+time stops during a combo FX.
+the hiscores screen displays a "press right mouse button to return" sign.
+
+06-15-03
+
+added mouse support in menu.
+added hiscores.
+changed font for scores and time display.
+changed font for combos.
+added particles fx for combos.
+
+06-14-03
+
+added combo feature.
+
+06-13-03
+
+added preliminary menu background.
+added starfield.
+added timer.
+added sound.
+
+06-12-03
+
+added a cool fx (the classic bouncing bars).
+added music.
+the game is fully playable.
+added shuffle function.
+started chips gfx.
